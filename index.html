@@ -3,7 +3,7 @@
   <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery.3.1.1.js"></script>
+  <script src="js/jquery-3.1.1.js"></script>
   <script src="js/scripts.js"></script>
   <title>pingPong</title>
   </head>
@@ -24,13 +24,15 @@
         <li>Numbers divisable by 5 display as "pong"</li>
         <li>Numbers divisible by 3 and 5 display as "pingpong"</li>
       </ul>
-      <form>
-        <div classs="form-group">
-          <input id="userInput" class="form-controle" type="text" name="number" placeholder="type here">
+      <form id="a">
+        <div class="form-group">
+          <input id="userInput" class="form-controle" type="text" placeholder="type here">
+          <button id="btn" type="submit"></button>
         </div>
       </form>
 
-      <div id="results">
+      <div>
+        <p id="result"></p>
       </div>
     </div>
   </body>
