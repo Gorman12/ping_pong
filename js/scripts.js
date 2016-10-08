@@ -3,11 +3,13 @@
 function numbers(e) {
   var output = [];
   for (var i=1; i<=e; i++) {
-    if (i%3 === 0) {
-      output.push("ping")
+    if ((i%3 === 0) && (i%5 === 0)) {
+      output.push("pingpong")
     } else if (i%5 === 0) {
       output.push("pong")
-    }else {
+    } else if (i%3 === 0) {
+    output.push("ping")
+    } else {
       output.push(i);
     }
   }
