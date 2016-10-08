@@ -5,7 +5,9 @@ function numbers(e) {
   for (var i=1; i<=e; i++) {
     if (i%3 === 0) {
       output.push("ping")
-    } else {
+    } else if (i%5 === 0) {
+      output.push("pong")
+    }else {
       output.push(i);
     }
   }
